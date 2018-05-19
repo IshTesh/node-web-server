@@ -38,8 +38,13 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about.hbs',{
-        pageTitle: 'About Page',
-        currentYear: new Date().getFullYear()
+        pageTitle: 'About Page'
+    });
+});
+
+app.get('/service', (req, res) => {
+    res.render('service.hbs',{
+        pageTitle: 'Service Page'
     });
 });
 
